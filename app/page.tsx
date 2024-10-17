@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "@/app/ui/home.module.css";
 import { lusitana } from "./ui/fonts";
 import Image from "next/image";
+import { sql } from "@vercel/postgres";
 
 export default function Page() {
   return (
