@@ -1,4 +1,5 @@
-import '@/app/ui/global.css'
+import "@/app/ui/global.css";
+import { Inter, Lusitana } from "next/font/google";
 
 export default function RootLayout({
   children,
@@ -6,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang='en'>
+      <body className={"${Inter.className} antialiased"}>{children}</body>
     </html>
   );
 }
